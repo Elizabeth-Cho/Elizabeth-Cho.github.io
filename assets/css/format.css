@@ -14,6 +14,11 @@
   width: 100%;
   margin: auto;
 }
-@media only screen and(min-width: 600px){
+@media (max-width: 800px){
   /*Mobile*/
+  .main{
+    width: 80%;
+    float: center;
+    display: inline-block;
+  }
 }
