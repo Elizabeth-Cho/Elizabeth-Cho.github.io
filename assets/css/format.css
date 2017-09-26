@@ -1,0 +1,19 @@
+.main{
+  width: 75%;
+  float: left;
+  display: inline-block;
+}
+
+.external{
+  width: 25%;
+  float: right;
+  display: inline-block;
+}
+
+#content{
+  width: 100%;
+  margin: auto;
+}
+@media only screen and(min-width: 600px){
+  /*Mobile*/
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="../../assets/css/text.css" rel="stylesheet"/>
+  <link href="../../assets/css/accordion.css" rel="stylesheet"/>
+  <link href="../../assets/css/style.css" rel="stylesheet"/>
+  <div class="header">
+    <h1>Resume<h1>
+  </div>
+  </head>
+  <body>
+    <div class="container">
+      <button class="accordion">Internships</button>
+      <div class="panel">
+        <ul>
+          <h3>UConn Cutting Edge Internship: July 2017</h3>
+          <ul>
+            <p>I worked with a graduate school student to conduct research and experiments
+              related to biology, specifically on an experiment designed to characterize
+              the frameshift mutations in ARGLU1 knockout cells, which were created by CRISPRs.</p>
+          </ul>
+        </ul>
+      </div>
+      <button class="accordion">Clubs and Extracurricular Activities</button>
+      <div class="panel">
+        <ul>
+          <h3><i>FIRST</i> Robotics: October 2014-Current</h3>
+          <ul>
+            <p>Programming Committee Head: October 2015-May 2017</p>
+            <p>Team Captain: May 2017-Current</p>
+          </ul>
+          <h3>Tests of Engineering Aptitude, Mathematics, and Science (TEAM+S): March 2015-Current</h3>
+          <ul>
+            <p>Chairperson: June 2017-Current</p>
+          </ul>
+          <h3>PicoCTF/CAMSCTF: 2015, 2017</h3>
+          <ul>
+            <p>Team Captain: 2017</p>
+          </ul>
+          <h3>Science Olympiad: November 2014-Current</h3>
+          <h3>Model UN: September 2014-Current</h3>
+          <h3>National Honor Society: May 2017-Current</h3>
+          <h3>Mu Alpha Theta: May 2017-Current</h3>
+          <h3>Spanish National Honor Society: May 2017-Current</h3>
+          <h3>Tri-M: October 2016-Current</h3>
+        </ul>
+      </div>
+      <button class="accordion">Awards</button>
+      <div class="panel">
+        <ul>
+          <h3>National Center for Women and Information Technology (NCWIT)
+            Aspirations in Computing Award National Honorable Mention: December 2016</h3>
+          <h3>NCWIT Aspirations in Computing Connecticut Affiliate: April 2016, May 2017</h3>
+          <h3>AP Scholar with Distinction: July 2017</h3>
+          <h3><i>FIRST</i> Robotics Dean's List Semifinalist Nominee: March 2017</h3>
+          <h3><i>FIRST</i> Robotics 2017 Waterbury District Finalist: March 2017</h3>
+          <h3>Fourth place team ranking at Science Olympiad Connecticut Competition: April 2017</h3>
+          <h3>Fifth place in Experimental Design at Yale Undergraduate Science Olympiad: January 2017</h3>
+          <h3>Outstanding Student in Chemistry Award: May 2016</h3>
+          <h3>Honorable Mention, Model UN: December 2015</h3>
+          <h3>Connecticut Council of Language Teachers World Language Award: May 2015</h3>
+          <h3>Third place in multiple choice for TEAM+S: March 2015</h3>
+          <h3><i>FIRST</i> Robotics Chairman's Award: March 2015</h3>
+          <h3>Scholastic Art Award for Pottery, Silver Key: January 2015</h3>
+        </ul>
+      </div>
+      <button class="accordion">Skills</button>
+      <div class="panel">
+        <ul>
+          <h3>Computer programming</h3>
+          <ul>
+            <p>Languages: Java, HTML, CSS, JavaScript, Markdown, PHP</p>
+          </ul>
+          <h3>Digital art</h3>
+          <ul>
+            <p>Programs used: FireAlpaca, Pixlr</p>
+          </ul>
+          <h3>Professional Napper</h3>
+        </ul>
+      </div>
+      <button class="accordion">Volunteer Work</button>
+      <div class="panel">
+        <ul>
+          
+        </ul>
+      </div>
+      <button class="accordion">Hobbies</button>
+      <div class="panel">
+        <ul>
+          <h3>Music composition</h3>
+          <ul>
+            <p>These songs are pop/pop rock songs that include sheet music and lyrics</p>
+            <p>Number of songs composed: 16</p>
+          </ul>
+          <h3>Digital art</h3>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for(i = 0; i < acc.length; i++){
+    acc[i].onclick = function(){
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if(panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      }
+      else{
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    }
+  }
+  </script>
+  </html>

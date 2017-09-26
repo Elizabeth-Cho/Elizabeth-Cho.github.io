@@ -1,0 +1,31 @@
+h1{
+  font-family: Century Gothic, sans-serif;
+}
+p{
+  font-family: Trebuchet, sans-serif;
+  color: rgb(25, 25, 25);
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 20px;
+  /*margin: 20px 30px;
+  width: 80px;
+  height: 90px;
+  background-color: rgb(165, 168, 255);*/
+}
+h1, h2, h3, h4{
+  margin-top: 25px;
+  font-family: Century Gothic, sans-serif;
+}
+
+h3{
+  font-size: 18px;
+}
+
+button, span{
+  font-family: Century Gothic, sans-serif;
+}
+
+span{
+  font-size: 16px;
+  margin-left: 15px;
+}

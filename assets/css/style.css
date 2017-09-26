@@ -1,0 +1,83 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("../Images/crosshatch 3.png");
+  background-attachment: fixed;
+  background-color: rgb(219, 250, 201);
+}
+
+h1{
+  position: relative;
+  /*color: rgb(245, 245, 255);*/
+  color: rgb(25, 25, 25);
+  font-size: 40px;
+  /*line-height: 150px;
+  margin-left: 10px;
+  margin: auto;*/
+  text-align: center;
+  vertical-align: bottom;
+  z-index: 0;
+  /*margin-top: 100px;
+  margin-bottom: 50px;*/
+  transform: translateY(-50%);
+}
+
+.header{
+  /*background-image: url("../Images/header image.png");
+  width: 900px;
+  height: 150px;*/
+  width: 60%;
+  margin: auto;
+  display: inline-block;
+  margin-top: 65px;
+  margin-bottom: 0;
+  margin-left: 40px;
+  z-index: -1;
+  max-height: 45px;
+  float: left;
+}
+
+.content{
+  width: 100%;
+  background-color: rgb(245, 245, 255);
+  margin: auto;
+  display: inline-block;
+  top: 0;
+}
+
+.container {
+  margin: auto;
+  display: inline-block;
+  /*width: 896px;*/
+  width: 60%;
+  border-left-style: solid;
+  border-width: 4px;
+  border-color: rgb(1, 213, 237);
+  background-color: rgb(245, 245, 255);
+  margin-top: 40px;
+  float: left;
+  margin-left: 40px;
+}
+
+.noteLink a{
+  font-family: Trebuchet, sans-serif;
+  color: rgb(25, 25, 25);
+  margin-top: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/*.main{
+  width: 75%;
+}
+
+.social{
+  width: 25%;
+}
+
+@media only screen and(min-width: 600px){
+  Mobile
+}*/
