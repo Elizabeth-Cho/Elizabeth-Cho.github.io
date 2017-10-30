@@ -7,18 +7,25 @@ p{
   font-size: 16px;
   margin-left: 20px;
   margin-top: 20px;
+  margin-right: 20px;
+  text-align: justify;
   /*margin: 20px 30px;
   width: 80px;
   height: 90px;
   background-color: rgb(165, 168, 255);*/
 }
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
   margin-top: 25px;
   font-family: Century Gothic, sans-serif;
 }
 
 h3{
   font-size: 18px;
+  margin-left: 10px;
+}
+
+h4{
+  text-align: center;
 }
 
 button, span{
@@ -30,6 +37,20 @@ span{
   margin-left: 15px;
 }
 
-.update h3{
-  margin-left: 10px;
+hr{
+  max-width: 90%;
+  margin: auto;
+}
+
+#plan-item a{
+  font-family: Trebuchet, sans-serif;
+}
+
+li {
+  margin-left: 20px;
+  font-family: Trebuchet, sans-serif;
+}
+
+#links a{
+  font-family: Trebuchet, sans-serif;
 }
