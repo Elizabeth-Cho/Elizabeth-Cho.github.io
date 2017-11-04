@@ -3,15 +3,42 @@
 <head>
   <link href="../../assets/css/text.css" rel="stylesheet"/>
   <link href="../../assets/css/style.css" rel="stylesheet"/>
+  <link href="../../assets/css/accordion.css" rel="stylesheet"/>
   <div class="header">
     <h1>Email Exchanges</h1>
   </div>
 </head>
 <body>
   <div class="container">
-    <div class="content">
-      <p>Content to be added</p>
+    <button class="accordion">Capstone Networking Conference</button>
+    <div class="panel">
+      <p>Dear Mrs. Swanson, <br/>
+        Thank you for taking the time to interview me yesterday. I enjoyed
+        discussing my capstone idea with you and I think the advice you gave
+        me about potentially recruiting other people to help me with different
+        parts of my project. I look forward to contacting you again in the
+        future for advice! Information and updates for my capstone will be
+        at silversapo.github.io/capstone.<br/>
+        Sincerely,<br/>
+        Elizabeth Cho</p>
     </div>
   </div>
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for(i = 0; i < acc.length; i++){
+    acc[i].onclick = function(){
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if(panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      }
+      else{
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    }
+  }
+  </script>
 </body>
 </html>
