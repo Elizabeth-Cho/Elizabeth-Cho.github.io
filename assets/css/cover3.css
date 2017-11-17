@@ -1,0 +1,66 @@
+body{
+  background-image: url("../Images/crosshatch 3.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.banner img{
+  width: 100%;
+  max-height: 450px;
+  margin-top: 40px;
+}
+
+#basic-info h2, h4{
+  text-align: center;
+}
+
+#basic-info{
+  margin-top: 75px;
+}
+
+.panel-link{
+  width: 25%;
+  display: inline-block;
+  /*margin-left: 1%;
+  margin-right: 1%;*/
+  float: left;
+}
+
+.panel-link img{
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  border-color: rgb(0, 96, 108);
+  vertical-align: middle;
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+  float: none;
+  margin-bottom: 5px;
+}
+
+.cover-content{
+  margin: auto;
+  width: 100%;
+  margin-bottom: 40px;
+  height: inherit;
+  margin-top: 40px;
+}
+
+.desc-text{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  float: right;
+  margin: auto;
+}
+
+.desc-text p{
+  width: 80%;
+  vertical-align: middle;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-weight: bold;
+}

@@ -25,6 +25,7 @@
   background-color: rgb(0, 44, 50);
   color: rgb(255, 255, 255);
 }
+
 .dropdown{
   float: left;
   overflow: hidden;
@@ -38,12 +39,24 @@
   padding: 14px 16px;
   background-color: inherit;
 }
+
+.dropbtn a{
+  font-family: Century Gothic;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: 0.25s;
+  background-color: inherit;
+  height: 50px;
+}
+
 .dropdown-content{
   display: none;
   position: fixed;
   background-color: rgb(0, 96, 108);
   max-width: 400px;
-  box-shdow: 0px 8px 16px 0px
 }
 
 .dropdown:hover{

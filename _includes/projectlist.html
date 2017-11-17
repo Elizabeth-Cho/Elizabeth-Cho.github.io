@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="../assets/css/text.css" rel="stylesheet"/>
+  <link href="../assets/css/accordion.css" rel="stylesheet"/>
+  <link href="../assets/css/style.css" rel="stylesheet"/>
+  <script type="text/javascript" src="../assets/js/accordion.js"></script>
+  <div class="header">
+    <h1>Project List</h1>
+  </div>
+</head>
+<body>
+    <div class="container">
+      <button class="accordion">Personal Website</button>
+      <div class="panel">
+        <h2><b>Project Timeframe:</b></h2>
+          <p>Started in June 2017</p>
+        <h2><b>Type of Project:</b></h2>
+          <p>Personal project</p>
+        <h2><b>Languages Used:</b></h2>
+          <p>HTML, CSS, JavaScript</p>
+        <h2><b>Description:</b></h2>
+          <p>This website was created to act as both a digital resume and a
+            digital portfolio for my <a href="/capstone">capstone project</a>.
+            I taught myself HTML, CSS, and JavaScript in the summer of 2017
+            and applied what I learned by making this website. Through trial
+            and error as well as lots of forum-searching, I became accustomed
+            to the syntax and learned how to create different elements on the
+            page without relying as heavily on online tutorials. This will
+            continue to be a live project as I add more content and learn how
+            to develop different elements.</p>
+            <p><a href="https://github.com/SilverSapo/SilverSapo.github.io">
+              Link to code</a></p>
+      </div>
+      <button class="accordion">Custom Capstone</button>
+      <div class="panel">
+        <h2><b>Project Timeframe:</b></h2>
+          <p>Approximately September 2017 to April 2018</p>
+        <h2><b>Type of Project:</b></h2>
+          <p>Capstone</p>
+        <h2><b>Languages Used:</b></h2>
+          <p>HTML, CSS, JavaScript</p>
+        <h2><b>Description</b></h2>
+          <p> This project has both a research and product component, where
+            students conduct research on a topic of their choice and present
+            their findings in the form of a product. The program I am in is
+            the custom capstone program, which requires more self-direction
+            from the students in terms of finding advisors and appropriate
+            community connections. The focus of my project is how digital media,
+            such as social media platforms and websites, can aid in general
+            publicity, which I define as outreach, gathering support, or
+            spreading a message. My planned product is an online game that will
+            be marketed using the techniques that I have studied from research.
+            The game will have a social/political message and is a choose-your-own
+            adventure style game, where the plot is driven by the user’s decisions.
+            More information and a digital portfolio of the process can be found
+            <a href="/capstone">here</a>
+      </div>
+      <button class="accordion">Information Medical Database Collection (iMDC)</button>
+      <div class="panel">
+        <h2><b>Project Timeframe:</b></h2>
+          <p>May 2017 to June 2017</p>
+        <h2><b>Type of Project:</b></h2>
+          <p>Final project for AP Biology</p>
+        <h2><b>Languages Used:</b></h2>
+        <h2><b>Description</b></h2>
+          <p>The program created from this project is designed to semi-automate
+            the triage process. Although not fully functional and not up to the
+            standard required to function properly in an actual emergency room
+            environment, it provides a good model of our concept. The patient
+            would answer questions about the reason for their visit and the
+            severity of their symptoms and the program would sort the patient.
+            The information about triage and how emergency rooms function was
+            acquired through research and after understanding how it works, we
+            developed a solution to the issue of overcrowding by allowing the
+            user to input their own information and let the system sort and
+            process their information, which included recommending which
+            specialists to see.</p>
+          <p><a href="https://github.com/SilverSapo/biology-final">Link to code</a></p>
+      </div>
+      <button class="accordion">2016 <i>FIRST</i> Stronghold Virtual Game</button>
+      <div class="panel">
+        <h2><b>Project Timeframe:</b></h2>
+           <p>May 2016 to June 2016</p>
+        <h2><b>Type of Project:</b></h2>
+          <p>Final project for AP Computer Science</p>
+        <h2><b>Languages Used:</b></h2>
+          <p>Java</p>
+        <h2><b>Description:</b></h2>
+        <p>This project was a simulation of the <i>FIRST</i> Robotics Competition’s game,
+          <a href="https://www.youtube.com/watch?v=VqOKzoHJDjA"><i>FIRST</i> Stronghold</a>.
+          The game allows the player to control a robot and gain points by breaching
+          defenses and shoot boulders into a tower. The probability of the player
+          making the shot is dependent on how far away they are from the tower.
+          At the end of the game, points from breached defenses and boulders shot
+          at the tower, mimicking the scoring mechanics of the real-life game.</p>
+        <p><a href="https://github.com/SilverSapo/fluffy-engima">Link to code</a>
+      </div>
+      <button class="accordion">Encryption Project</button>
+      <div class="panel">
+        <h2><b>Project Timeframe:</b></h2>
+          <p>December 2015 to January 2016</p>
+        <h2><b>Type of Project:</b></h2>
+          <p>AP Computer Science project</p>
+        <h2><b>Languages Used:</b></h2>
+          <p>Java</p>
+        <h2><b>Description:</b></h2>
+          <p>The task for this project was to create a program that could
+            encrypt and decrypt messages with a method of encryption of our
+            choice. This program encrypts messages with a substitution cipher.
+            The user inputs an alphabet, a word, and the message they want to
+            encrypt. If given the alphabet, word, and an encrypted message,
+            the program is able to decrypt said message.</p>
+            <p><a href="https://github.com/SilverSapo/EncryptionProject">
+              Link to code</a></p>
+      </div>
+      </div>
+      <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for(i = 0; i < acc.length; i++){
+        acc[i].onclick = function(){
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          }
+          else{
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        }
+      }
+      </script>
+    </body>
+</html>

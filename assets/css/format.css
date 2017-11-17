@@ -1,12 +1,12 @@
 .main{
   width: 75%;
-  float: left;
+  float: center;
   display: inline-block;
 }
 
 .external{
   width: 25%;
-  float: right;
+  float: center;
   display: inline-block;
 }
 
@@ -20,5 +20,10 @@
     width: 80%;
     float: center;
     display: inline-block;
+    margin: auto;
+  }
+
+  .external{
+    display: none;
   }
 }
