@@ -17,13 +17,15 @@
 @media (max-width: 800px){
   /*Mobile*/
   .main{
-    width: 80%;
+    width: 100%;
     float: center;
-    display: inline-block;
+    display: block;
     margin: auto;
   }
 
   .external{
+    width: 0%;
+    float: none;
     display: none;
   }
 }
