@@ -9,6 +9,7 @@ p{
   margin-top: 20px;
   margin-right: 20px;
   text-align: justify;
+  margin-right: 50px;
   /*margin: 20px 30px;
   width: 80px;
   height: 90px;
@@ -49,6 +50,8 @@ hr{
 li {
   margin-left: 20px;
   font-family: Trebuchet, sans-serif;
+  margin-right: 50px;
+  text-align: justify;
 }
 
 #links a{
