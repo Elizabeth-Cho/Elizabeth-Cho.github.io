@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<div class="nav">
+<div class="nav" id="topnav">
   <div class="link">
   <link href="../../assets/css/navigation.css" rel="stylesheet"/>
   <link href="../../assets/css/text.css" rel="stylesheet"/>
@@ -10,6 +10,7 @@
         <a href="/about">About</a>
         <a href="/projects">Projects</a>
         <a href="/resume">Resume</a>
+        <a href="/gallery">Gallery</a>
         <!---<a href="/page1">Firestorm</a>
         <a href="/contact">Contact Me</a>--->
         <div class="dropdown">
@@ -26,8 +27,21 @@
             <a href="/capstone/pacing">Pacing Guide</a>
           </div>
         </div>
+        <a href="/firestorm/about">Project Firestorm</a>
+        <!---<a href="javascript:void(0);" class="icon" onclick="expand()">&#9776;</a>--->
       </ul>
-  </nav>
+    </nav>
     </div>
   </div>
+  <!---<script>
+    function expand(){
+      var x = document.getElementById("topnav");
+      if(x.className === "nav"){
+        x.className += " responsive";
+      }
+      else{
+        x.className = "nav";
+      }
+    }
+  </script>--->
 </html>

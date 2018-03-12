@@ -1,3 +1,8 @@
+head{
+  height: 40px;
+  width: 100%;
+}
+
 .main{
   width: 75%;
   float: center;
