@@ -3,11 +3,12 @@
 <head>
   <link href="../assets/css/gb.css" rel="stylesheet">
   <script type="text/javascript" src="../assets/js/basicgame.js"></script>
+  <?php include '../assets/php/projectfirestorm.php';?>
 </head>
 <body>
   <div class="game-container">
     <!---Background image--->
-    <img id="background" src="../assets/Images/gallery/forest.png"
+    <img id="background" src="../assets/Images/Backgrounds/glitch.gif"
       style="width:2340px height:auto" alt="test"/>
 
     <!---Dialogue container--->
@@ -27,11 +28,11 @@
         </div>
         <!---Dialogue--->
         <div class="dialogue-container">
-          <p>???</p>
+          <p id="text">0</p>
         </div>
         <!---Next button--->
         <div class="next-button">
-          <button>Next</button>
+          <button id="next" onclick="switchBox()">Next</button>
         </div>
       </div>
     </div>
@@ -39,9 +40,9 @@
     <!---2 choice container--->
     <div class="text-container" id="two-choice" style="display:none">
       <!---Text box image--->
-      <img id="tb-two" src="../assets/Images/text box/two choice box.png" alt="two-choice box"/>
+      <img id="tb-two" src="../assets/Images/text box/two choice box.png"/>
       <!---Name--->
-      <div class="name">
+      <div class="name-container">
         <p id="name">Chelsea</p>
       </div>
       <!---Content wrapper--->
@@ -52,8 +53,8 @@
         </div>
         <!---Choice buttons--->
         <div class="button-container">
-          <button class="game-choice-button" id="choice-a">A</button>
-          <button class="game-choice-button" id="choice-b">B</button>
+            <button class="game-choice-button-2" id="choice-a-2" onclick="switchBox()">Dialogue</button>
+            <button class="game-choice-button-2" id="choice-b-2" onclick="switchBox()">Three choice</button>
         </div>
       </div>
     </div>
@@ -63,7 +64,7 @@
       <!---Text box image--->
       <img id="tb-three" src="../assets/Images/text box/three choice box.png" alt="three-choice box"/>
       <!---Name--->
-      <div class="name">
+      <div class="name-container">
         <p id="name">Chelsea</p>
       </div>
       <!---Content wrapper--->
@@ -74,9 +75,9 @@
         </div>
         <!---Choice buttons--->
         <div class="button-container">
-          <button class="game-choice-button" id="choice-a">A</button>
-          <button class="game-choice-button" id="choice-b">B</button>
-          <button class="game-choice-button" id="choice-c">C</button>
+          <button class="game-choice-button-2" id="choice-a-3" onclick="switchBox()">Two choice</button>
+          <button class="game-choice-button-2" id="choice-b-3" onclick="switchBox()">Dialogue</button>
+          <button class="game-choice-button-2" id="choice-c-3" onclick="switchBox()">C</button>
         </div>
       </div>
     </div>
@@ -92,10 +93,12 @@
       </div>
       <!---Next button--->
       <div class="next-button">
+        <button id="next" onclick="changeImage()">Next</button>
       </div>
     </div>
     </div>
 
+    <!---Home screen--->
     <div class="home-container" id="home">
       <div class="info-button">
       </div>
