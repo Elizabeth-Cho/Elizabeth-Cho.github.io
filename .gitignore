@@ -1,0 +1,17 @@
+_site
+.sass-cache
+.jekyll-metadata
+
+Gemfile
+
+Gemfile\.lock
+
+_config\.yml
+
+index \(2\)\.md
+
+about\.md
+
+404\.html
+
+_posts/2018-05-09-welcome-to-jekyll\.markdown
