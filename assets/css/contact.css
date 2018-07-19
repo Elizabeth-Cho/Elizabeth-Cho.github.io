@@ -1,0 +1,83 @@
+body{
+  background-color: rgb(68, 68, 68);
+}
+
+.title{
+  margin-top: 7.5%;
+  width: 100%;
+  height: 10%;
+  display: block;
+}
+
+.title h1{
+  text-align: center;
+}
+
+.title hr{
+    color: rgb(0, 255, 130);
+    border-color: rgb(0, 255, 130);
+    background-color; rgb(0, 255, 130);
+}
+
+.social-row{
+  width: 100%;
+  height: 50%;
+  margin: 5%;
+  display: block;
+}
+
+.social-unit{
+  height: 100%;
+  width: 14%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: inline-block;
+}
+
+#github{
+  margin-left: 0;
+}
+
+#medium{
+  margin-right: 0;
+}
+
+.extImg img{
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 255, 130);
+}
+
+.username p{
+  text-align: center;
+  font-size: 16px;
+}
+
+.email h4{
+  font-size: 22px;
+}
+
+@media (max-width: 768px){
+  .social-unit, #github, #medium{
+    width: 45%;
+    display: block;
+    margin: auto;
+    float: left;
+  }
+
+  .username{
+    display: none;
+  }
+
+  .extImg img{
+    margin: 15%;
+    width: 70%;
+  }
+
+  .title{
+    margin-top: 0;
+  }
+}

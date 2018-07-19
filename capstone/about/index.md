@@ -1,4 +1,0 @@
----
-layout: cAbout
-title: ''
----

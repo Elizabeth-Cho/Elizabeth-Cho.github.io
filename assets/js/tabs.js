@@ -10,7 +10,7 @@ function openChar(charName) {
 function openList(){
   var x = document.getElementById("char-bar");
   if(x.className === "char-tab"){
-    x.clasName += " responsive";
+    x.className += " responsive";
   }
   else{
     x.className = "char-tab";

@@ -1,0 +1,87 @@
+body{
+  width: 100%;
+  height: auto;
+}
+
+.title{
+  width: 50%;
+  height: auto;
+  float: left;
+  display: inline-block;
+}
+
+.timeframe{
+  width: 50%;
+  height: auto;
+  float: right;
+  display: inline-block;
+}
+
+.title-general{
+  width: 100%;
+  height: auto;
+  float: center;
+  display: block;
+}
+
+.timeframe h3{
+  text-align: right;
+}
+
+.timeframe p{
+  text-align: right;
+}
+
+ul{
+  margin-left: 2.5%;
+}
+
+.item{
+  margin-right: 7%;
+  margin-bottom: 2%;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.item p{
+  font-weight: lighter;
+  display: block;
+  margin: auto;
+}
+
+.desc{
+  margin-left: 5%;
+  padding-top: 5%;
+  margin-right: 5%;
+  /*border-left: 2px solid rgb(0, 255, 130);*/
+}
+
+.desc-single{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.desc, .desc-single p{
+  font-style: italic;
+}
+
+.desc .timeframe p{
+  text-align: right;
+  margin-right: 5%;
+}
+
+@media (max-width: 768px){
+  .timeframe{
+    width: 40%
+  }
+
+  .title{
+    width: 60%;
+  }
+
+  .page-title{
+    text-align: center;
+    margin-top: 0;
+  }
+}

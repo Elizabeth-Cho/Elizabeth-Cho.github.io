@@ -1,4 +1,0 @@
----
-layout: cResume
-title: ''
----

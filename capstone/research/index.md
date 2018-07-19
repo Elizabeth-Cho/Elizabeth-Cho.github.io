@@ -1,4 +1,0 @@
----
-layout: cResearch
-title: ''
----

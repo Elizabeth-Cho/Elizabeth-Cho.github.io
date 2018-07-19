@@ -1,0 +1,52 @@
+.dropbtn button{
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border-bottom: 4px solid rgb(0, 255, 130);
+  cursor: pointer;
+  width: 100%;
+}
+
+button.dropbtn.active{
+  background-color: rgb(30, 30, 30);
+  border-bottom: 4px solid rgb(0, 255, 130);
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: black;
+  border-bottom: 4px solid rgb(0, 255, 130);
+  margin-bottom: 2%;
+}
+
+.dropbtn{
+  width: 100%;
+  border-bottom: 4px solid rgb(0, 255, 130);
+}
+
+.content{
+  display: none;
+  position: absolute;
+  background-color: rgb(25, 25, 25);
+  width: 100%;
+  z-index: 3;
+}
+
+#drop-content{
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+}
+
+.link-mob{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}

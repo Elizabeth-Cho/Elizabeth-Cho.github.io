@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<link href="../assets/css/navMob.css" rel="stylesheet"/>
+<link href="../assets/css/accordion.css" rel="stylesheet"/>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  rel="stylesheet"/>
+<div class="dropdown">
+  <button class="accordion" id="drop"><i class="fa fa-bars"></i></button>
+  <div class="panel" id="drop-content">
+    <div class="link-mob">
+      <a href="/">Home</a>
+    </div>
+    <div class="link-mob">
+      <a href="/about">About</a>
+    </div>
+    <div class="link-mob">
+      <a href="/projects">Projects</a>
+    </div>
+    <div class="link-mob">
+      <a href="/resume">Resume</a>
+    </div>
+    <div class="link-mob">
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="link-mob">
+      <a href="/capstone">Capstone</a>
+    </div>
+    <div class="link-mob">
+      <a href="/gallery">Gallery</a>
+    </div>
+  </div>
+</div>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for(i = 0; i < acc.length; i++){
+    acc[i].onclick = function(){
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if(panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      }
+      else{
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    }
+  }
+</script>
+</html>

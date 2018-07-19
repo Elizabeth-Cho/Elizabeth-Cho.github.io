@@ -1,36 +1,27 @@
 head{
-  height: 40px;
+  height: 50px;
   width: 100%;
-}
-
-.main{
-  width: 75%;
-  float: center;
-  display: inline-block;
-}
-
-.external{
-  width: 25%;
-  float: center;
-  display: inline-block;
 }
 
 #content{
   width: 100%;
   margin: auto;
 }
-@media (max-width: 800px){
-  /*Mobile*/
-  .main{
-    width: 100%;
-    float: center;
-    display: block;
-    margin: auto;
+
+.mobile, .mNav{
+  display: none;
+}
+
+.desktop, .dNav{
+  display: block;
+}
+
+@media (max-width: 768px){
+  .desktop, .dNav{
+    display: none;
   }
 
-  .external{
-    width: 0%;
-    float: none;
-    display: none;
+  .mobile, .mNav{
+    display: block;
   }
 }

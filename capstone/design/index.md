@@ -1,4 +1,0 @@
----
-layout: cDesign
-title: ''
----

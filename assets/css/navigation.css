@@ -2,27 +2,30 @@
   z-index: 3;
 }
 .nav{
-  background-color: rgb(0, 74, 84);
+  background-color: rgb(0, 0, 0);
   overflow: hidden;
   font-family: Century Gothic;
-  height: 50px;
+  height: 7.5%;
   width: 100%;
   top: 0;
   left: 0;
   position: fixed;
+  border-style: solid;
+  border-bottom: 2px solid rgb(0, 255, 130);
+  z-index: 10;
 }
 .nav a{
   float: left;
   display: block;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 16px;
   text-decoration: none;
   font-size: 17px;
   transition: 0.25s;
 }
 .nav a:hover{
-  background-color: rgb(0, 44, 50);
+  background-color: rgb(68, 68, 68);
   color: rgb(255, 255, 255);
 }
 

@@ -1,4 +1,0 @@
----
-layout: cEmail
-title: ''
----

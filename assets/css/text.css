@@ -1,28 +1,45 @@
 h1{
   font-family: Century Gothic, sans-serif;
+  font-size: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
+
+@media (max-width: 768px){
+  h1{
+    margin: 0;
+  }
+}
+
 p{
   font-family: Trebuchet, sans-serif;
-  color: rgb(25, 25, 25);
-  font-size: 16px;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-right: 20px;
+  /*color: rgb(25, 25, 25);*/
+  color: white;
+  font-size: 18px;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: justify;
-  margin-right: 50px;
+  line-height: 125%;
   /*margin: 20px 30px;
   width: 80px;
   height: 90px;
   background-color: rgb(165, 168, 255);*/
 }
+
+a{
+    text-decoration: none;
+    color: rgb(0, 255, 130);
+}
+
 h1, h2, h3, h4, h5{
-  margin-top: 25px;
+  /*margin-top: 25px;*/
   font-family: Century Gothic, sans-serif;
+  color: white;
 }
 
 h3{
-  font-size: 18px;
-  margin-left: 10px;
+  font-size: 20px;
+  /*margin-left: 10px;*/
 }
 
 h4{

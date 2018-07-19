@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<link href="../assets/css/text.css" rel="stylesheet"/>
+<link href="../assets/css/accordion.css" rel="stylesheet"/>
+<body>
+  <div class="page-title">
+    <h1>Projects</h1>
+    <hr>
+  </div>
+  <div class="container">
+    <!---Website--->
+    <button class="accordion">Website</button>
+    <div class="panel">
+      <h1>Personal Website</h1>
+      <hr>
+      <ul>
+        <h3>Languages: HTML, CSS, JavaScript, Markdown</h3>
+        <h3>Type of project: Personal project</h3>
+        <div class="item">
+          <div class="title-general">
+            <h3>Description</h3>
+          </div>
+          <div class="desc-single">
+            <p>This is an ongoing project that involves the creation and updates
+              of this website, which serves as a digital resume.</p>
+          </div>
+        </div>
+        <div class="item">
+        <h3><a href="https://github.com/SilverSapo/SilverSapo.github.io">
+          Link to code</a></h3>
+        <div class="item">
+          <div class="title-general">
+            <h3>Changelog</h3>
+          </div>
+          <div class="desc-single">
+            <div class="title">
+              <p>Initial website launch</p>
+              <br>
+              <p>Additional pages published</p>
+              <br>
+              <p>Capstone pages updated</p>
+              <br>
+              <br>
+              <p>Project Firestorm about page</p>
+              <br>
+              <p>Website redesign, condensed capstone pages, added contact and
+                gallery pages</p>
+              <br>
+            </div>
+            <div class="timeframe">
+              <p>9/26/2017</p>
+              <br>
+              <p>11/17/2017</p>
+              <br>
+              <p>10/30/2017 - 5/1/2018</p>
+              <br>
+              <p>3/11/2018</p>
+              <br>
+              <p>7/19/2018</p>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <!---Project Firestorm--->
+    <button class="accordion">Project Firestorm</button>
+    <div class="panel">
+      <h1>Project Firestorm</h1>
+      <hr>
+      <ul>
+        <h3>Languages: HTML, CSS, JavaScript, Java</h3>
+        <h3>Type of project: Part of capstone, personal project</h3>
+        <div class="item">
+          <div class="title-general">
+            <h3>Description:</h3>
+          </div>
+          <div class="desc-single">
+            <p>Project Firestorm is a choose-your-own-adventure game based in a
+              fictional society in which the player's actions influence the
+              status of the society. A teaser version of the game was
+              developed as a part of my senior capstone project, but the full
+              version of the game will be developed as a personal project.</p>
+          </div>
+        </div>
+      </ul>
+    </div>
+    <!---iMDC--->
+    <button class="accordion">Information Medical Database Collection (iMDC)</button>
+    <div class="panel">
+      <h1>Information Medical Database Collection (iMDC)</h1>
+      <hr>
+      <ul>
+        <h3>Languages: Java</h3>
+        <h3>Type of project: Final project for AP Biology</h3>
+        <div class="item">
+          <div class="title-general">
+            <h3>Description</h3>
+          </div>
+          <div class="desc-single">
+            <p>This purpose of this project was to create a model of a solution
+              for the issue of emergency room overcrowding. The model created
+              from this was a program that would help to automate the triage
+              process. The patient would answer questions about the reason for
+              their visit and the severity of their symptoms. Based off of the
+              responses, the program would sort and process their information
+              and recommend which specialists to see.</p>
+          </div>
+        </div>
+        <h3><a href="https://github.com/SilverSapo/biology-final">Link to code</a></h3>
+      </ul>
+    </div>
+    <!---FIRST Stronghold--->
+    <button class="accordion">2016 <i>FIRST</i> Stronghold Virtual Game</button>
+    <div class="panel">
+      <h1>2016 <i>FIRST</i> Stronghold Virtual Game</h1>
+      <hr>
+      <ul>
+        <h3>Languages: Java</h3>
+        <h3>Type of project: Final project for AP Computer Science</h3>
+        <div class="item">
+          <div class="title-general">
+            <h3>Description</h3>
+          </div>
+          <div class="desc-single">
+            <p>This project was a simulation of the <i>FIRST</i> Robotics Competition’s game,
+              <i>FIRST</i> Stronghold. The game allows the player to control a
+              robot and gain points by breaching defenses and shoot boulders
+              into a tower. The probability of the player making the shot is
+              dependent on how far away they are from the tower. At the end of
+              the game, points from breached defenses and boulders shot
+              at the tower, mimicking the scoring mechanics of the real-life game.</p>
+          </div>
+        </div>
+        <h3><a href="https://github.com/SilverSapo/fluffy-engima">Link to code</a></h3>
+      </ul>
+    </div>
+    <!---Encryption--->
+    <button class="accordion">Encryption Project</button>
+    <div class="panel">
+      <h1>Encryption Project</h1>
+      <hr>
+      <ul>
+        <h3>Languages: Java</h3>
+        <h3>Type of project: AP Computer Science project</h3>
+        <div class="item">
+          <div class="title-general">
+            <h3>Description</h3>
+          </div>
+          <div class="desc-single">
+            <p>The task for this project was to create a program that could
+              encrypt and decrypt messages with a method of encryption of our
+              choice. This program encrypts messages with a substitution cipher.
+              The user inputs an alphabet, a word, and the message they want to
+              encrypt. If given the alphabet, word, and an encrypted message,
+              the program is able to decrypt said message.</p>
+          </div>
+        </div>
+        <h3><a href="https://github.com/SilverSapo/EncryptionProject">
+          Link to code</a></h3>
+      </ul>
+    </div>
+  </div>
+</body>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for(i = 0; i < acc.length; i++){
+    acc[i].onclick = function(){
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if(panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      }
+      else{
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    }
+  }
+</script>
+</html>
