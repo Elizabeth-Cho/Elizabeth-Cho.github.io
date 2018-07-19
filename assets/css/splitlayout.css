@@ -127,6 +127,12 @@ button.side-tab.active, button.side-tab:hover{
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.presentation iframe{
+  width: 480px;
+  height: 299px;
 }
 
 @media (max-width: 768px){
@@ -141,5 +147,10 @@ button.side-tab.active, button.side-tab:hover{
 
   .content-pane h1{
     text-align: center;
+  }
+
+  .presentation iframe{
+    width: 100%;
+    height: auto;
   }
 }
