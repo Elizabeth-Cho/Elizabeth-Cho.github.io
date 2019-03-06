@@ -136,3 +136,18 @@ a:hover {
 .social-banner a:hover {
     color: rgb(255, 169, 0);
 }
+
+#quote-text{
+    font-size: 36px;
+    margin-left: 0;
+    color: rgb(125, 125, 125);
+}
+
+#credit {
+    font-style: italic;
+    color: rgb(23, 176, 209);
+}
+
+.quote {
+    margin-bottom: 50px;
+}
