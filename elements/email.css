@@ -17,11 +17,12 @@
     margin-bottom: 80px;
 }
 
-.title, .content, .signed, .footer, .social-banner{
+.title, .content, .signed, .footer, .social-banner, .resource-links{
     font-family: Trebuchet, sans-serif;
     text-align: justify;
     margin: 5% 15% 5%;
-    color: rgb(27, 122, 142);
+    /*color: rgb(27, 122, 142);*/
+    color: rgb(10, 10, 10);
 }
 
 /*title block*/
@@ -85,7 +86,7 @@ h3, h4{
 p {
     line-height: 175%;
     font-size: 20px;
-    color: rgb(75, 75, 75);
+    color: rgb(125, 125, 125);
 }
 
 /*and now we have footer fonts*/
@@ -107,11 +108,12 @@ p {
 
 a {
     font-size: 20px;
-    color: rgb(255, 169, 0);
+    color: rgb(27, 122, 142);
+    font-weight: bold;
 }
 
 a:hover {
-    color: rgb(255, 127, 0);
+    color: rgb(255, 169, 0);
 }
 
 .bannerex {
@@ -122,7 +124,7 @@ a:hover {
 }
 
 /*social media stuff at the bottom*/
-.social-banner {
+.social-banner, .resource-links {
     text-align: center;
 }
 
@@ -140,7 +142,7 @@ a:hover {
 #quote-text{
     font-size: 36px;
     margin-left: 0;
-    color: rgb(125, 125, 125);
+    color: rgb(100, 100, 100);
 }
 
 #credit {
@@ -150,4 +152,42 @@ a:hover {
 
 .quote {
     margin-bottom: 50px;
+    line-height: 75%;
+}
+
+.resource-links hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(100, 100, 100, 0.35), rgba(100, 100, 100, 0.75), rgba(100, 100, 100, 0.35));
+}
+
+.resource-links a {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.resource-links {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.resource-links h5 {
+    font-size: 24px;
+    margin-block-start: 2%;
+    margin-block-end: 4%;
+}
+
+.quote h5 {
+    margin-block-start: 2%;
+    margin-block-end: 2%;
+    font-size: 20px;
+}
+
+.highlight {
+    color: rgb(255, 169, 0);
+    display: inline;
 }
