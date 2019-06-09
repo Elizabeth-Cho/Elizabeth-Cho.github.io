@@ -7,6 +7,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(hodson.jpg);
     min-height: 25vh;
     box-shadow: 2px 2px 5px grey;
+    padding: 3%;
 }
 
 .content p {
@@ -20,7 +21,6 @@
 .content h1 {
     color: rgb(66, 165, 245);
     top: 5px;
-    padding: 3% 3% 0;
     font-size: 32px;
 }
 
