@@ -1,0 +1,50 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/temp banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-text h1{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.top-text h1, h2 {
+    color: rgb(212, 208, 225);
+}
+
+.social-links a{
+    margin-left: 2%;
+    margin-right: 2%;
+    color: rgb(212, 208, 225);
+    transition: 0.25s;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0f238a;
+}
+
+.social-links {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(212, 208, 225);
+}

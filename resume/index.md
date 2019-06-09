@@ -1,4 +1,0 @@
----
-layout: resumeinfo
-title: ''
----

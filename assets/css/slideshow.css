@@ -1,5 +1,5 @@
 * {
-  box-sizing:border-box;  
+  box-sizing:border-box;
 }
 
 body{
@@ -17,6 +17,10 @@ body{
 /* Hide the images by default */
 .mySlides {
     display: none;
+}
+
+.mySlides img {
+    width: 100%;
 }
 
 /* Next & previous buttons */

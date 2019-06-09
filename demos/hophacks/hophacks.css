@@ -1,0 +1,30 @@
+.content {
+    display: block;
+    margin: auto;
+    width: 70%;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(hodson.jpg);
+    min-height: 25vh;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.content p {
+    padding: 0 5%;
+    color: white;
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.content h1 {
+    color: rgb(66, 165, 245);
+    top: 5px;
+    padding: 3% 3% 0;
+    font-size: 32px;
+}
+
+.content a {
+    text-decoration: none;
+    color: rgb(66, 165, 245);
+}
