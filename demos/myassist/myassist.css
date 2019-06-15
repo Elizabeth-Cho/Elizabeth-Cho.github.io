@@ -36,12 +36,12 @@ h1 {
 
 button {
     font-family: "Open Sans", sans-serif;
-    width: 15%;
-    height: 4%;
+    width: 24%;
+    line-height: 2.0;
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 4%;
-    font-size: 14px;
+    font-size: 18px;
     background-color: rgb(58, 108, 234);
     border: 0;
     box-shadow: none;
