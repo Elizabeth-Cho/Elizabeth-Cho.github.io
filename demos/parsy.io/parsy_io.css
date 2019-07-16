@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    color: white;
+    height: 100vh;
+    line-height: 1.6;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+p {
+    width: 80%;
+}
+
+button {
+    /*background-color: rgb(106, 171, 221);*/
+    background: linear-gradient(to right,
+        rgb(33, 113, 185) 50%, rgb(106, 171, 221) 50%);
+        background-size: 200%;
+        background-position: right bottom;
+    box-shadow: none;
+    border: 0;
+    width: 25%;
+    line-height: 2.25;
+    font-size: 18px;
+    margin-top: 4%;
+    transition: all 0.35s ease-out;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    background-position: left bottom;
+    /*background-color: rgb(33, 113, 185);*/
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar li {
+    text-decoration: none;
+}
+
+.navbar a {
+    text-align: center;
+    font-size: 18px;
+    padding: 16px 22px;
+    transition: 0.25s;
+    text-decoration: none;
+    color:  rgb(255, 255, 255);
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: rgba(33, 113, 185, 0.7);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+ #home {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/Images/mockup 1.png");*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+    height: 100vh;
+ }
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+.content img {
+    width: 60%;
+}
+
+#video {
+    width: auto;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:: -100;
+}
+
+#about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/Images/crosshatch 3.png");
+}
+
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/Images/temp banner.png");
+}
+
+#about, #contact {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*
+    wrong info, report error
+    want to have it send an email, someone can verify
+    server endpoint in flask server
+    email client - substitution for that, research that
+    see how it works, endpoint, http
+    obvi more effort but not too bad tbh
+    use postman for flask server (do sometime lateish July)
+    ~July 29 deadline for landing
+    ~end of August for email
+*/
