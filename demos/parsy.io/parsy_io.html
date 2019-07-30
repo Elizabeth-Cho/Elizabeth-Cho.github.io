@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<link href="parsy_io.css" rel="stylesheet"/>
-<link rel="shortcut icon" type="image/x-icon" href="ParsyioCal.ico"/>
+<head>
+    <link href="parsy_io.css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="ParsyioCal.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---<script type="text/javascript" src="scroll.js"></script>--->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+            speedAsDuration: true
+        });
+
+        window.onscroll = function() {
+            var nav = document.getElementsByClassName("navbar")[0];
+            if (window.pageYOffset > 150) {
+                nav.classList.add("navbar-add");
+            }
+            else {
+                nav.classList.remove("navbar-add");
+            }
+        }
+    </script>
+</head>
 <div class="container">
     <title>Parsy.io</title>
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Keep Me Informed</a></li>
         </ul>
     </nav>
     <section id="home">
@@ -25,16 +46,15 @@
         <h1>About</h1>
         <br/>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+    <section id="contact">
+        <h1>Keep me informed</h1>
         <div id="signup">
-            <h2>Keep me informed</h2>
             <form>
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="Email">
                 <button id="form-button">Submit</button>
+            </div>
             </form>
-        </div>
-    </section>
-    <section id="contact">
-        <h1>Contact</h1>
     </section>
 </div>
