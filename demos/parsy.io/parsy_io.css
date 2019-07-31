@@ -57,7 +57,7 @@ button:hover {
 }
 
 #nav-logo {
-    width: 33%;
+    width: 100%;
     grid-column-start: 1;
     grid-column-end: 2;
 }
@@ -66,7 +66,7 @@ button:hover {
     height: 32px;
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-left: 20px;
+    padding-left: 0;
     width: auto;
 }
 
@@ -102,10 +102,6 @@ button:hover {
 .navbar-add {
     background-color: rgb(0, 0, 0);
     transition: 0.3s;
-}
-
-.navbar-add a {
-    text-align: right !important;
 }
 
 section {
@@ -205,7 +201,7 @@ input {
     grid-column-start: 3;
     grid-column-end: 4;
     text-align: right;
-    padding-right: 5%;
+    width: 95%;
 }
 
 #icon-links i {
@@ -219,4 +215,56 @@ input {
 .footer-add {
     background-color: rgb(0, 0, 0);
     transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 14px;
+        padding: 15px 10px;
+    }
+
+    #nav-logo a {
+        padding: 0;
+        text-align: center;
+    }
+
+    .content img {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 16px;
+        width: 20%;
+    }
+
+    #about p {
+        font-size: 14px;
+    }
+
+    #tiny {
+        height: 24px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+
+    #signup {
+        width: 80%;
+    }
+
+    .footer {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #icon-links {
+        width: 90%;
+    }
+
+    #icon-links i {
+        margin-left: 10%;
+    }
 }
