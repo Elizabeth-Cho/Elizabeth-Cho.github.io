@@ -144,7 +144,7 @@ section {
 }
 
 #about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/Images/crosshatch 3.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("a.png");
 }
 
 #signup {
@@ -163,7 +163,7 @@ input {
 }
 
 #contact {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/Images/temp banner.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("b.png");
 }
 
 #about, #contact {
