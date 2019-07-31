@@ -13,11 +13,14 @@
 
         window.onscroll = function() {
             var nav = document.getElementsByClassName("navbar")[0];
+            var foot = document.getElementsByClassName("footer")[0];
             if (window.pageYOffset > 150) {
                 nav.classList.add("navbar-add");
+                foot.classList.add("footer-add");
             }
             else {
                 nav.classList.remove("navbar-add");
+                foot.classList.remove("footer-add");
             }
         }
     </script>
@@ -49,6 +52,7 @@
     </section>
     <section id="contact">
         <h1>Keep me informed</h1>
+        <br>
         <div id="signup">
             <form>
                 <input type="text" placeholder="Name">
@@ -57,4 +61,10 @@
             </div>
             </form>
     </section>
+    <footer class="footer">
+        <!---potentially add mailto tag--->
+        <a>tryme@gmail.com</a>
+        <br>
+        <p>&copy; 2019 Parsy.io</p>
+    </footer>
 </div>
