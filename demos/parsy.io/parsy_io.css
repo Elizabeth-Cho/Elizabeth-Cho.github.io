@@ -49,25 +49,44 @@ button:hover {
     position: fixed;
     top: 0;
     z-index: 1;
-    display: flex;
+    line-height: 1;
     width: 100%;
-    height: 60px;
+    height: auto;
     transition: 0.25s;
+    display: grid;
+}
+
+#nav-logo {
+    width: 33%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#tiny {
+    height: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    width: auto;
 }
 
 .navbar ul {
-    display: flex;
     list-style: none;
+    display: inline;
     width: 100%;
-    justify-content: center;
+    text-align: right;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 .navbar li {
     text-decoration: none;
+    display: inline;
+    float: right;
 }
 
 .navbar a {
-    text-align: center;
+    text-align: right;
     font-size: 18px;
     padding: 16px 22px;
     transition: 0.25s;
@@ -174,6 +193,7 @@ input {
 .footer a {
     color: white;
     text-decoration: none;
+    transition: 0.25s;
 }
 
 #copyright {
@@ -192,19 +212,11 @@ input {
     margin-left: 2%;
 }
 
+#icon-links a:hover {
+    color: rgba(33, 113, 185);
+}
+
 .footer-add {
     background-color: rgb(0, 0, 0);
     transition: 0.3s;
 }
-
-/*
-    wrong info, report error
-    want to have it send an email, someone can verify
-    server endpoint in flask server
-    email client - substitution for that, research that
-    see how it works, endpoint, http
-    obvi more effort but not too bad tbh
-    use postman for flask server (do sometime lateish July)
-    ~July 29 deadline for landing
-    ~end of August for email
-*/
