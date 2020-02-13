@@ -1,0 +1,138 @@
+/* i:hover {
+    color: gray;
+} */
+
+#side {
+    text-decoration: none;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+#nav {
+    top: 0;
+    left: 0;
+    /* background-color: #191A1B; */
+    /* background-color: #5F3794; */
+    font-size: 36px;
+}
+
+#footer {
+    bottom: 0;
+    left: 0;
+    /* background-color: #191A1B; */
+    /* background-color: #5F3794; */
+    font-size: 18px;
+}
+
+/* #nav li {
+    /* margin-left: 8px;
+    margin-right: 8px;
+}*/
+
+/*#footer li {
+    margin-left: 5px;
+    margin-right: 5px;
+} */
+
+#nav, #footer {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: fixed;
+}
+
+i {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    #nav, #footer {
+        /* background-color: #5F3794; */
+        background-image: linear-gradient(rgba(13, 13, 26, .75), rgba(13, 13, 26, .75));
+    }
+
+    #footer {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    #footer i {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    #nav {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    #nav i {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    i:hover {
+        /* background-image: linear-gradient(to right, rgba(95, 55, 148, .9), rgba(95, 55, 148, 0)); */
+        color: rgb(130, 215, 217);
+    }
+
+    #side {
+        height: 100%;
+        width: 60px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        /* background-color: #191A1B; */
+        /* background-color: #5F3794; */
+        /* background-image: linear-gradient(to right, rgba(95, 55, 148, .25), rgba(95, 55, 148, .25)); */
+
+    }
+
+    i {
+        color: white;
+        padding-left: 0.32em;
+        padding-right: 0.32em;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: block;
+        transition-duration: 0.25s;
+    }
+
+    li {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        display: block;
+    }
+
+    #nav, #footer {
+        text-align: center;
+        padding: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    #nav {
+        top: 0;
+    }
+
+    #nav li, #footer li {
+        font-size: 26px;
+    }
+
+    #footer {
+        bottom: 0;
+    }
+}

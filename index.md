@@ -1,4 +1,0 @@
----
-layout: homepage
-title: 'Home'
----
