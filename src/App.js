@@ -14,7 +14,7 @@ class App extends Component {
             <div className="content">
                 <Route component = { Navigation } />
                 <div className="actual-content">
-                    <Route exact path="/" component = { Landing } />
+                    <Route component = { Landing } />
                 </div>
             </div>
         </Router>
