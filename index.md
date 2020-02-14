@@ -1,4 +1,4 @@
 ---
-layout: redirect
-title: 'Redirect'
+layout: site
+title: 'Site'
 ---

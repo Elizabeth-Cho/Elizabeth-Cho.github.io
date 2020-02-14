@@ -1,6 +1,19 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
     min-height: 100vh;
     position: relative;
+}
+
+h1 {
+    font-size: 32px;
 }
 
 h1, h2 {
@@ -119,7 +132,6 @@ hr.section-hr {
 
 .category {
     width: auto;
-    /* padding: 20px; */
     padding: 2%;
     background-color: rgba(255, 255, 255, 0.6);
 }
@@ -159,13 +171,6 @@ hr.section-hr {
     font-weight: bold;
 }
 
-/* .col-left, .col-right {
-    width: 50%;
-    display: inline-block;
-    margin-top: 0;
-    padding-top: 0;
-} */
-
 .col-left, .col-right {
     float: left;
     width: 50%;
@@ -192,6 +197,10 @@ hr.section-hr {
 }
 
 @media (max-width: 768px) {
+    .category {
+        padding: 20px;
+    }
+
     .gallery-img p {
         padding-top: 0;
         padding-bottom: 0;
