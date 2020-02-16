@@ -51,21 +51,10 @@ i {
         font-size: 18px;
     }
 
-    #nav {
-        padding-top: 2px;
-        padding-bottom: 2px;
-    }
-
     #nav i {
-        padding-left: 12px;
-        padding-right: 12px;
+        font-size: 28px;
+        padding: 10px 12px;
     }
-
-    #footer a {
-        font-size: 18px;
-        padding-top: 0;
-    }
-
 }
 
 @media (min-width: 768px) {

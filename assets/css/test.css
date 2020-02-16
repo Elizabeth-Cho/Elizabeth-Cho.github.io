@@ -1,114 +1,51 @@
+/* ---- reset ---- */
+
 body {
-  margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
+    margin: 0;
+    /* background-image: linear-gradient(rgba(23, 24, 47, 0.5), rgba(23, 24, 47, 0.5)), url("../images/galaxy overlay.png"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/galaxy overlay.png");
+    background-color: #17182f;
     font-family: Ubuntu, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    text-align: center;
+    height: fit-content;
+    background-attachment: fixed;
 }
+
+canvas {
+    display: block;
+    vertical-align: top;
+}
+
+
+/* ---- particles.js container ---- */
 
 #particles-js {
-    /* position: absolute; */
+    position: fixed;
     width: 100%;
     height: 100%;
+    z-index: -10;
 }
 
-html {
-    min-height: 100vh;
-    position: relative;
-}
-
-h1, h2, h3, h4 {
-    letter-spacing: 1px;
-}
-
-h1 {
-    font-size: 32px;
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-h3 {
-    font-size: 26px;
-}
-
-p {
-    font-family:'Segoe UI', 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-h4 {
-    font-size: 28px;
-    text-align: center;
-    margin-top: 0;
-    padding-top: 40px;
-}
-
-h1, h4 {
-    color: white;
-}
-
-h2 {
-    color: #C7C0CC;
-}
-
-html {
-    height: 100%;
-    background-color: #121212;
-}
-
-.main-content {
-    height: auto;
-    scroll-snap-type: y mandatory;
-    background-image: url(../images/overlay.png);
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.text {
-    width: 50%;
+#particles-js canvas {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
+
+/* ---- added site content ---- */
 
 .page {
     padding-left: 8%;
     padding-right: 8%;
     width: auto;
     display: block;
-    /* background-size: cover; */
-    /* background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url(../images/overlay.png); */
-}
-
-#home, #skills {
-    height: 100vh;
-}
-
-#home {
-    /* background-image: linear-gradient(#C8DDE7, #A8D3E3), url(../images/overlay.png); */
-    background-image: linear-gradient(rgba(39, 71, 122, 0.6), rgba(32, 51, 84, 0.6));
-}
-#skills {
-    /* background-image: linear-gradient(#A8D3E3, #648FB1); */
-    background-image: linear-gradient(rgba(32, 51, 84, 0.6), rgba(28, 46, 74, 0.6));
-}
-
-#projects {
-    /* background-image: linear-gradient(#648FB1, #48627B); */
-    background-image: linear-gradient(rgba(28, 46, 74, 0.6), rgba(25, 40, 65, 0.6));
     min-height: 100vh;
 }
 
-#portfolio {
-    /* background-color: #48627B; */
-    background-image: linear-gradient(rgba(25, 40, 65, 0.6), rgba(3, 25, 41, 0.6));
+#home {
     min-height: 100vh;
 }
 
@@ -120,25 +57,10 @@ html {
     border-left-style: solid;
     border-color: #0836C1;
     border-left-width: 5px;
+    text-align: left;
 }
 
-#bottom {
-    margin-bottom: 0;
-}
-
-hr.home-hr {
-    border: none;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(143, 143, 143), white, rgb(143, 143, 143), rgba(0, 0, 0, 0));
-}
-
-hr.section-hr {
-    border: none;
-    background-color: black;
-    height: 5px;
-    width: 128px;
-    margin-left: 0;
-}
+/* ---- gallery formatting ---- */
 
 .category {
     width: auto;
@@ -214,6 +136,78 @@ hr.section-hr {
     margin-bottom: 40px;
 }
 
+
+/* ---- formatting some text ---- */
+.text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1, h4 {
+    color: white;
+}
+
+h2 {
+    color: #C7C0CC;
+}
+
+
+h1, h4 {
+    color: white;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p {
+    font-family:'Segoe UI', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 40px;
+}
+
+#portfolio h3 {
+    text-align: left;
+}
+
+/* ---- decorations ---- */
+
+hr.home-hr {
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(143, 143, 143), white, rgb(143, 143, 143), rgba(0, 0, 0, 0));
+}
+
+hr.section-hr {
+    border: none;
+    background-color: black;
+    height: 5px;
+    width: 128px;
+    margin-left: 0;
+}
+
+/* ---- mobile formatting ---- */
 @media (max-width: 768px) {
     .category {
         padding: 20px;
