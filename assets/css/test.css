@@ -139,7 +139,7 @@ canvas {
 
 /* ---- formatting some text ---- */
 .text {
-    width: 50%;
+    width: 75%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -179,6 +179,7 @@ p {
     font-family:'Segoe UI', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
+
 
 h4 {
     font-size: 28px;
