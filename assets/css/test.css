@@ -173,6 +173,10 @@ html {
     .portfolio-img {
         max-width: 75%;
     }
+
+    .caption {
+        font-size: 14px;
+    }
 }
 /* ---- formatting some text ---- */
 .text {
