@@ -63,121 +63,18 @@ html {
     border-radius: 5px;
 }
 
-/* ---- gallery formatting ---- */
-
-#portfolio {
-    min-height: 100vh;
-}
-
-.category {
-    width: auto;
-    padding: 2%;
-    background-color: rgba(255, 255, 255, 0.6);
-}
-
-.portfolio {
-    height: 50vh;
-    position: relative;
-    display: flex;
-    flex-flow: column;
-}
-
-.portfolio-img {
-    position: absolute;
-    max-width: 85%;
-    max-height: 80%;
-    margin: auto;
-    display: block;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 58px;
-}
-
-.portfolio-img-tall {
-    max-height: 80%;
-    width: auto;
-    margin: auto;
-    display: block;
-    position: relative;
-
-}
-
-.caption {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 20px;
-    font-style: italic;
-    bottom: 18px;
-    width: 100%;
-    position: absolute;
-}
-
-/* ---- carousel ---- */
-.piece {
-    display: none;
-    flex-flow: column;
-    margin-top: 18px;
-    position: absolute;
-    flex-grow: 1;
-    height: 100%;
-    width: 100%;
-}
-
-.picture {
-    /* display: table-cell;
-    text-align: center;
-    vertical-align: middle; */
-    display: table;
-}
-
-.img-carousel {
-    flex-grow: 1;
-    position: relative;
-    width: 85%;
-    display: block;
-    margin: auto;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
+/* ---- portfolio section formatting time ---- */
+.portfolio-category {
+    text-decoration: none;
+    font-size: 18px;
     color: black;
-    font-weight: bold;
-    font-size: 32px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
 }
 
-.next {
-    right: 0;
-    border-radius: 3px 0 0 epx;
+.portfolio-category i {
+    font-size: 18px;
 }
 
-.prev:hover, .next:hover {
-    color: rgb(130, 215, 217);
-}
 
-@media (max-width: 768px) {
-    .portfolio {
-        height: 40vh;
-    }
-
-    .img-carousel {
-        width: 100%;
-    }
-
-    .portfolio-img {
-        max-width: 75%;
-    }
-
-    .caption {
-        font-size: 14px;
-    }
-}
 /* ---- formatting some text ---- */
 .text {
     width: 75%;
@@ -295,6 +192,10 @@ hr.section-hr {
     }
 
     p {
+        font-size: 14px;
+    }
+
+    .portfolio-category i, .portfolio-category {
         font-size: 14px;
     }
 
